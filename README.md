@@ -298,15 +298,9 @@ Switch memory type via `--memory_type` (default: `auto` — detects from checkpo
 | `auto` | (detected) | Auto-detect from checkpoint path |
 | `no_memory` | Floor | No memory, I2V baseline |
 | `context_k1` / `context_k5` / `context_k20` | Raw context | 1 / 5 / 20 context frames |
-| `framepack_weight` | Compression | FramePack temporal decay reweighting |
-| `framepack_len_r2` / `framepack_len_r4` | Compression | FramePack length compression ratio 2 / 4 |
-| `framepack_hybrid_r2` / `framepack_hybrid_r4` | Compression | Hybrid: length compression + token weighting |
 | `spatial_mem` | Spatial | Spatial grid memory (64 tokens) |
-| `spatial_concat_text` | Spatial | Spatial memory via text KV concatenation |
-| `spatial_inject_none` | Spatial | Spatial memory with withheld read-out |
-| `spatial_cross_attn_readout` | Spatial | Spatial memory via cross-attention |
-| `videossm_hybrid` | State-space | Legacy hybrid SSM |
 | `block_wise_ssm` | State-space | Block-wise recurrent SSM |
+| `videossm_hybrid` | State-space | Legacy hybrid SSM |
 
 Add `--context_image` for first-frame conditioning and `--action_path` for camera trajectory control:
 
